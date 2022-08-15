@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/23b5b01fdc.js" crossorigin="anonymous"></script>
+    <style>
+        h1, h2{
+            text-align: center;
+        }
+        .login-container{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input ,button{
+            font-weight:500;
+            font-size: 1.3em;
+            margin: 7px;
+            padding-left: 10px;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+        }
+        .login-form button{
+            background-color: orange;
+            color: whitesmoke;
+            padding: 5px;
+            font-weight: 700;
+            border: 0;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+            margin-right: 20px;
+        }
+        nav{
+            display: flex;
+            justify-content:center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Website</h1>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">content</a>
+                <a href="">About Us</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <div class="login-container">
+            <form action="" class="login-form">
+                <h2>Login</h2>
+                <input type="email" name="email" id="" placeholder="Enter Your Email" required>
+                <input type="password" name="password" id=""placeholder="Enter Your Password" required >
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

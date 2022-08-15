@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 400px;
+            border: 2px dotted slategray;
+            display: flex;
+            /* justify-content: center; */
+            align-items:inherit;
+        }
+        .box{
+            font-size: 3em;
+            width: 200px;
+            
+            border: dashed 2px blueviolet;
+        }
+        #box1{
+            order: 2;
+        }
+        #box2{
+            order: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Explore Flexbox</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div id="box1" class="box">BOX-1</div>
+            <div id="box2" class="box">BOX-2</div>
+            
+        </section>
+    </main>
+</body>
+</html>
